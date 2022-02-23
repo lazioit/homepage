@@ -285,3 +285,16 @@
   });
 
 })()
+
+
+
+
+// javascript fragment
+const container = document.getElementById('container');
+const button = googlePayClient.createButton({
+  buttonColor: 'default',
+  buttonType: 'buy',
+  onClick: () => {},
+});
+
+container.appendChild(button);

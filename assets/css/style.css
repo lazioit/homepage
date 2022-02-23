@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #bc8943;
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -354,11 +354,14 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+ 
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
+
+
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
@@ -370,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .container {
   position: relative;
-  padding-top: 74px;
+ 
   text-align: center;
 }
 #hero h1 {
@@ -571,11 +574,18 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ebebeb;
+  border: 1px solid  #e1cdb2;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
+
+
+.services .icon-box:hover {
+  filter: drop-shadow(0 0 0.75rem #d1c5b3);filter: drop-shadow(0 0 0.75rem #d1c5b3);
+}
+
+
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
@@ -761,7 +771,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
@@ -1344,4 +1354,197 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+.add_img {
+
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  width: 100%;
+}
+
+.product_head {
+color: #dba552 !important; 
+line-height: 1px;
+font-weight: bold;
+}
+
+.product_img{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+#product h4 {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #b36d0e;
+
+}
+
+
+.service_box :hover {
+
+  background-color:#ffdeb0;
+ 
+  transition:background-size 1s, background-color 1s;
+  filter: drop-shadow(0 0 0.75rem #b36d0e);
+}
+
+
+
+/*--------------------------------------------------------------
+# Featured Services Section
+--------------------------------------------------------------*/
+.featured-services .service-item {
+  padding: 30px;
+  transition: all ease-in-out 0.4s;
+  background: var(--color-white);
+  height: 100%;
+}
+.featured-services .service-item .icon {
+  margin-bottom: 10px;
+}
+.featured-services .service-item .icon i {
+  color: var(--color-primary);
+  font-size: 36px;
+  transition: 0.3s;
+}
+.featured-services .service-item h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.featured-services .service-item h4 a {
+  color: var(--color-secondary);
+  transition: ease-in-out 0.3s;
+}
+.featured-services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.featured-services .service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0 60px 0 rgba(var(--color-secondary-rgb), 0.1);
+}
+.featured-services .service-item:hover h4 a {
+  color: var(--color-primary);
+}
+
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.service .img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.service .img img {
+  transition: 0.6s;
+}
+.service .details {
+  padding: 50px 30px;
+  margin: -100px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
+  background-color: white;
+  position: relative;
+  
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0 25px black, 0.1);
+}
+.service .details .icon {
+  margin: 0;
+  width: 72px;
+  height: 72px;
+  background-color:  #dba552;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  border: 6px solid white;
+}
+.service .details h3 {
+  color:#151515;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+.service .details p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.service .service-item:hover .details h3 {
+  color: #dba552;
+}
+.service .service-item:hover .details .icon {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid  #dba552;
+}
+.service .service-item:hover .details .icon i {
+  color: black;
+}
+.service .service-item:hover .img img {
+  transform: scale(1.2);
+}
+
+
+
+
+#slider {
+  
+    width: 100%;
+    height: 100vh;
+    background: url(../img/hero-bg.jpg) top center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 82px;
+}
+
+.carousel-caption {
+
+  left: 9%;
+    padding-bottom: 150px;
+    text-align: left;
+  
+}
+
+
+.carousel-caption h3 {
+  font-size: 45px;
+  font-weight: bold;
+  
+}
+
+
+.carousel-caption h2 {
+  font-size: 65px;
+  font-weight: bold;
+  
+}
+
+
+
+.carousel-caption p {
+ 
+  font-size:20px;
+
+  
+}
+
+.carousel-caption button {  
+
+  padding: 12px 28px 12px 28px;
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 20px;
 }
