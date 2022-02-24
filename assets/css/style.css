@@ -908,7 +908,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
 }
 .testimonials .section-header {
   margin-bottom: 40px;
@@ -927,7 +927,7 @@ section {
   margin: 0 auto;
 }
 .testimonials .testimonial-item h3 {
-  font-size: 20px;
+  font-size: 45px;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #fff;
@@ -953,7 +953,7 @@ section {
   top: 10px;
 }
 .testimonials .testimonial-item p {
-  font-style: italic;
+   font-size: 20px;
   margin: 0 auto 15px auto;
   color: #eee;
 }
@@ -982,6 +982,17 @@ section {
   }
 }
 
+
+#testimonials h2 {
+  
+  font-size: 45px;
+    font-weight: bold;
+}
+#testimonials p {
+
+  font-size: 20px;
+}
+ 
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1513,7 +1524,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .carousel-caption {
 
   left: 9%;
-    padding-bottom: 150px;
+   
     text-align: left;
   
 }
@@ -1543,8 +1554,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 .carousel-caption button {  
 
-  padding: 12px 28px 12px 28px;
+ 
   font-size: 18px;
   margin-right: 10px;
   border-radius: 20px;
 }
+
+#banner img{
+  width: 100%;
+}
+
+
